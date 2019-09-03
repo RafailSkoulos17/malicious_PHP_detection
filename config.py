@@ -1,0 +1,1 @@
+PHP_PATH = "C:\php\php"
