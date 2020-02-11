@@ -1,6 +1,6 @@
 # Malware detection with machine learning methods
 
-Build a system which is able predict if a given php file is malicious or benign, by using machine learning methods. To achieve this I extracted several lexical features and we chose the best among of them. Also I experimented with several different classifiers found in literature, namely Support-Vector Machine(SVM), Logistic Regression and Decision Tree.
+Build a system which is able predict if a given php file is malicious or benign, by using machine learning methods. To achieve this I extracted several lexical features and we chose the best among of them. Also I experimented with several different classifiers found in literature, namely Support-Vector Machine(SVM), Stochastic Gradient Descent Classifier and Decision Tree.
 
 ## Description
 
@@ -61,7 +61,7 @@ Currently I have experimented with 3 different sets of features for each PHP fil
 
     * Decicion Tree
     * SVM
-    * Logistic Regression
+    * Stochastic Gradient Descent Classifier
 
 ## Inputs and Outputs
 
