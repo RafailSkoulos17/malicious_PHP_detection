@@ -1,10 +1,10 @@
 # Malware detection with machine learning methods
 
-The aim of this project is to build a python module which will be able to predict with adequite precision if a given php file is malicious or benign, by using machine learning methods. To achieve this we extracted several lexical features and we chose the best among of them. Also we are going to experiment with several different classifiers found in literature. 
+Build a system which is able predict if a given php file is malicious or benign, by using machine learning methods. To achieve this I extracted several lexical features and we chose the best among of them. Also I experimented with several different classifiers found in literature, namely Support-Vector Machine(SVM), Logistic Regression and Decision Tree.
 
 ## Description
 
-The module contains the following packages:
+The module contains the following 2 main directories:
 * **machine_learning**: Contains all the implementation of the machine learning algorithms used among with a file for the 
 preprocess of the features and some files used for the tuning of the algorithms.
 
@@ -26,12 +26,12 @@ There are 2 simple simple steps:
 "input_file" variable the path of the file which contains the features.
 
 You can also perform a grid search for the tuning parameters of the SVM algorithm,
-by running the **svn_grid_search.py** file after you have assigned the values you want 
+by running the **<algorithm_name>_grid_search.py** file after you have assigned the values you want 
 to the variables used to define the parameters combination of the grid search.
 
 ## Features used
 
-Currently we have experimented with 3 different sets of features for each php file.
+Currently I have experimented with 3 different sets of features for each PHP file.
 
 * Lexical features:
 
@@ -61,18 +61,12 @@ Currently we have experimented with 3 different sets of features for each php fi
 
     * Decicion Tree
     * SVM
-    * SGD
+    * Logistic Regression
 
 ## Inputs and Outputs
 
 **Inputs** directory contains the malicious and benign sample files.  
-**Outputs** directory contains the features extracted in JSON files. In the future the classification results will be there too.
-
-## Feature ouptput example
-Not existing yet.
-
-## Classification output example 
-Not existing yet.
+**Outputs** directory contains the features extracted in JSON files and the classification results.
 
 ## Prerequisites
 
@@ -89,25 +83,3 @@ You will also need the following python packages:
     * phply
     * ply
     * imblearn
-
-
-Note: Soon a python script "setup.py" will be created which will install all the necessary python packages.
-
-## Tests
-
-Not implemented yet.
-
-## Author
-
-***Rafail Skoulos***
-
-## License
-
-Does not exist.
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
-
